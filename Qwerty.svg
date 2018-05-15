@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="799"
+   height="385"
+   viewBox="0 0 800 384"
+   id="svg2"
+   xml:space="preserve"
+   style="fill-rule:evenodd"
+   sodipodi:docname="Qwerty.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="952"
+     id="namedview1819"
+     showgrid="false"
+     inkscape:zoom="1.7634543"
+     inkscape:cx="383.87184"
+     inkscape:cy="301.45014"
+     inkscape:window-x="1440"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" /><metadata
+     id="metadata872"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs4"><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutM"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.4,0.4)"
+         id="path4359"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutS"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.2,0.2)"
+         id="path4362"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutL"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.8,0.8)"
+         id="path4356"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend"
+       style="overflow:visible"><path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path4216"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow2Lend"
+       style="overflow:visible"><path
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         id="path4234"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow2Lstart"
+       style="overflow:visible"><path
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(1.1,0,0,1.1,1.1,0)"
+         id="path4231"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" /></marker><style
+       type="text/css"
+       id="style6" /><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutSU"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.2,0.2)"
+         id="path5625"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutSU-2"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.2,0.2)"
+         id="path5625-2"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutSI"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.2,0.2)"
+         id="path6762"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutMu"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.4,0.4)"
+         id="path10716"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutMY"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.4,0.4)"
+         id="path10719"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutM1"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.4,0.4)"
+         id="path11856"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutM1-2"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.4,0.4)"
+         id="path11856-5"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutM1-6"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.4,0.4)"
+         id="path11856-54"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutM1-4"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.4,0.4)"
+         id="path11856-9"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutM1-1"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.4,0.4)"
+         id="path11856-97"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutM1-64"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.4,0.4)"
+         id="path11856-3"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutM1-5"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.4,0.4)"
+         id="path11856-55"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutM1-9"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.4,0.4)"
+         id="path11856-0"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutM1-17"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.4,0.4)"
+         id="path11856-4"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker><marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutMF"
+       style="overflow:visible"><path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.4,0.4)"
+         id="path3528"
+         style="fill:#2b2828;fill-rule:evenodd;stroke:#2b2828;stroke-width:1pt;marker-start:none" /></marker></defs><path
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke:#202326;stroke-width:0"
+     id="path105"
+     d="m 75.956707,68.626686 h 20 c 1,0 3,1 3,3 v 18 c 0,1 -2,3 -3,3 h -20 c -2,0 -3,-2 -3,-3 v -18 c 0,-2 1,-3 3,-3 z" /><text
+     x="128.31471"
+     y="151.92039"
+     id="text203"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">Q</text>
+<text
+     x="156.00691"
+     y="151.92039"
+     id="text207"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">W</text>
+<text
+     x="188.64456"
+     y="151.92039"
+     id="text211"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">E</text>
+<text
+     x="217.32603"
+     y="151.92039"
+     id="text215"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">R</text>
+<text
+     x="247.98561"
+     y="151.92039"
+     id="text219"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">T</text>
+<text
+     x="277.65619"
+     y="151.92039"
+     id="text223"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">Y</text>
+<text
+     x="307.32675"
+     y="151.92039"
+     id="text227"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">U</text>
+<text
+     x="339.96463"
+     y="151.92039"
+     id="text231"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">I</text>
+<text
+     x="365.6792"
+     y="151.92039"
+     id="text235"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">O</text>
+<text
+     x="396.33859"
+     y="151.92039"
+     id="text239"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">P</text>
+<text
+     x="136.22606"
+     y="177.63496"
+     id="text243"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">A</text>
+<text
+     x="166.88612"
+     y="177.63496"
+     id="text247"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">S</text>
+<text
+     x="195.56761"
+     y="177.63496"
+     id="text251"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">D</text>
+<text
+     x="226.22768"
+     y="177.63496"
+     id="text255"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">F</text>
+<text
+     x="254.90886"
+     y="177.63496"
+     id="text259"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">G</text>
+<text
+     x="284.57944"
+     y="177.63496"
+     id="text263"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">H</text>
+<text
+     x="316.22809"
+     y="177.63496"
+     id="text267"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">J</text>
+<text
+     x="343.92065"
+     y="177.63496"
+     id="text271"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">K</text>
+<text
+     x="374.58044"
+     y="177.63496"
+     id="text275"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">L</text>
+<text
+     x="148.09457"
+     y="202.36055"
+     id="text279"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">Z</text>
+<text
+     x="177.76534"
+     y="202.36055"
+     id="text283"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">X</text>
+<text
+     x="207.43611"
+     y="202.36055"
+     id="text287"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">C</text>
+<text
+     x="237.1059"
+     y="202.36055"
+     id="text291"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">V</text>
+<text
+     x="266.77698"
+     y="202.36055"
+     id="text295"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">B</text>
+<text
+     x="296.44794"
+     y="202.36055"
+     id="text299"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">N</text>
+<text
+     x="325.12933"
+     y="202.36055"
+     id="text303"
+     style="font-weight:normal;font-size:13.93205929px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">M</text>
+<path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#2b2828;stroke-width:0"
+     id="path305"
+     d="m 589.95671,201.62669 v -10" /><path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#2b2828;stroke-width:0"
+     id="path309"
+     d="m 589.95671,216.62669 v 11" /><path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#2b2828;stroke-width:0"
+     id="path313"
+     d="m 613.95671,221.62669 h 10" /><path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#2b2828;stroke-width:0"
+     id="path317"
+     d="m 564.95671,221.62669 h -11" /><text
+     x="665.35254"
+     y="143.01912"
+     id="text331"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">7</text>
+<text
+     x="665.35254"
+     y="167.74464"
+     id="text335"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">4</text>
+<text
+     x="665.35254"
+     y="193.45927"
+     id="text339"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">1</text>
+<text
+     x="696.0116"
+     y="117.30484"
+     id="text343"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">/</text>
+<text
+     x="696.0116"
+     y="143.01912"
+     id="text347"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">8</text>
+<text
+     x="696.0116"
+     y="167.74464"
+     id="text351"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">5</text>
+<text
+     x="696.0116"
+     y="193.45927"
+     id="text355"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">2</text>
+<text
+     x="724.69312"
+     y="118.85285"
+     id="text359"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">*</text>
+<text
+     x="724.69312"
+     y="143.01912"
+     id="text363"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">9</text>
+<text
+     x="724.69312"
+     y="167.74464"
+     id="text367"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">6</text>
+<text
+     x="724.69312"
+     y="193.45927"
+     id="text371"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">3</text>
+<text
+     x="665.35254"
+     y="219.17357"
+     id="text377"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">0</text>
+<text
+     x="754.36389"
+     y="116.31573"
+     id="text381"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">-</text>
+<text
+     x="755.35315"
+     y="163.35873"
+     id="text385"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">+</text>
+<text
+     x="105.56699"
+     y="131.15094"
+     id="text509"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">1</text>
+<text
+     x="134.24847"
+     y="131.15094"
+     id="text513"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">2</text>
+<text
+     x="163.91925"
+     y="131.15094"
+     id="text517"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">3</text>
+<text
+     x="193.59003"
+     y="131.15094"
+     id="text521"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">4</text>
+<text
+     x="224.24908"
+     y="131.15094"
+     id="text525"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">5</text>
+<text
+     x="253.92006"
+     y="131.15094"
+     id="text529"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">6</text>
+<text
+     x="283.59064"
+     y="131.15094"
+     id="text533"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">7</text>
+<text
+     x="312.272"
+     y="131.15094"
+     id="text537"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">8</text>
+<text
+     x="341.94263"
+     y="131.15094"
+     id="text541"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">9</text>
+<text
+     x="372.60245"
+     y="131.15094"
+     id="text545"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">0</text>
+<path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#2b2828;stroke-width:0"
+     id="path547"
+     d="m 507.95671,119.62669 h -11" /><text
+     x="341.94263"
+     y="117.86374"
+     id="text583"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">(</text>
+<text
+     x="372.60245"
+     y="117.86374"
+     id="text587"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">)</text>
+<text
+     x="313.2612"
+     y="117.86374"
+     id="text591"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">*</text>
+<text
+     x="282.60144"
+     y="117.30484"
+     id="text595"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">&amp;</text>
+<text
+     x="253.92006"
+     y="117.30484"
+     id="text599"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">^</text>
+<text
+     x="223.2598"
+     y="117.30484"
+     id="text603"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">%</text>
+<text
+     x="193.59003"
+     y="117.30484"
+     id="text607"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">$</text>
+<text
+     x="163.91925"
+     y="117.30484"
+     id="text611"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">#</text>
+<text
+     x="133.25919"
+     y="117.30484"
+     id="text615"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">@</text>
+<text
+     x="105.56699"
+     y="117.30484"
+     id="text619"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">!</text>
+<path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#2b2828;stroke-width:0"
+     id="path631"
+     d="m 445.95671,190.62669 -4,4 h 2 v 8 h 4 v -8 h 2 z" /><text
+     x="75.896217"
+     y="132.14005"
+     id="text635"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">`</text>
+<text
+     x="74.906921"
+     y="117.30484"
+     id="text639"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">~</text>
+<text
+     x="401.28384"
+     y="131.15094"
+     id="text655"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">-</text>
+<text
+     x="401.28384"
+     y="116.31573"
+     id="text659"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">_</text>
+<text
+     x="430.95413"
+     y="131.15094"
+     id="text663"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">=</text>
+<text
+     x="430.95413"
+     y="116.31573"
+     id="text667"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">+</text>
+<text
+     x="461.61429"
+     y="131.15094"
+     id="text671"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">\</text>
+<text
+     x="461.61429"
+     y="117.86374"
+     id="text675"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">|</text>
+<text
+     x="421.06439"
+     y="155.87643"
+     id="text679"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">[</text>
+<text
+     x="420.0752"
+     y="143.01912"
+     id="text683"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">{</text>
+<text
+     x="449.74579"
+     y="155.87643"
+     id="text687"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">]</text>
+<text
+     x="449.74579"
+     y="143.01912"
+     id="text691"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">}</text>
+<text
+     x="398.31696"
+     y="180.60199"
+     id="text695"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">;</text>
+<text
+     x="398.31696"
+     y="167.74464"
+     id="text699"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">:</text>
+<text
+     x="427.98724"
+     y="181.59109"
+     id="text703"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">'</text>
+<text
+     x="426.99805"
+     y="168.73375"
+     id="text707"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">&quot;</text>
+<text
+     x="409.19589"
+     y="207.30537"
+     id="text711"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">/</text>
+<text
+     x="409.19589"
+     y="194.44839"
+     id="text715"
+     style="font-weight:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">?</text>
+<text
+     x="348.86584"
+     y="194.44839"
+     id="text731"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';-inkscape-font-specification:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333"
+     transform="scale(1.0007154,0.99928514)" />
+<path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#2b2828;stroke-width:0"
+     id="path733"
+     d="m 730.95671,171.62669 h 10" /><path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#2b2828;stroke-width:0"
+     id="path737"
+     d="m 706.95671,150.62669 v -10" /><path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#2b2828;stroke-width:0"
+     id="path741"
+     d="m 681.95671,171.62669 h -10" /><path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#2b2828;stroke-width:0"
+     id="path745"
+     d="m 706.95671,191.62669 v 10" /><text
+     x="725.68237"
+     y="218.18446"
+     id="text771"
+     style="font-weight:normal;font-size:6.96602964px;font-family:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;-inkscape-font-specification:'Ghoulish Fright AOE';font-style:normal;font-stretch:normal;font-variant:normal;"
+     transform="scale(1.0007154,0.99928514)">.</text>
+<path
+     d="M 111.05934,141.04596 H 101.04682"
+     id="path4208"
+     style="fill:#2b2828;fill-opacity:1;stroke:#2b2828;stroke-width:1.00025034;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutMu)"
+     inkscape:connector-curvature="0" /><path
+     d="m 98.043065,139.04349 v 4.00501"
+     id="path5410"
+     style="fill:#2b2828;fill-opacity:1;stroke:#2b2828;stroke-width:1.00025046;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     inkscape:connector-curvature="0" /><path
+     d="M 98.043063,149.05598 H 108.05558"
+     id="path4208-0"
+     style="fill:#2b2828;fill-opacity:1;fill-rule:evenodd;stroke:#2b2828;stroke-width:1.00025034;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutMY)"
+     inkscape:connector-curvature="0" /><path
+     d="m 111.05934,147.05348 v 4.005"
+     id="path5410-9"
+     style="fill:#2b2828;fill-opacity:1;fill-rule:evenodd;stroke:#2b2828;stroke-width:1.00025034;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     inkscape:connector-curvature="0" /><path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#2b2828;stroke-width:1.00125158px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#TriangleOutM1)"
+     id="path11623"
+     d="m 589.65759,216.20126 v 10.01253" /><path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#2b2828;stroke-width:1.00125158px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#TriangleOutM1)"
+     id="path11623-1-7"
+     d="m 614.68886,223.14859 h 10.01253" /><path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#2b2828;stroke-width:1.00125158px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#TriangleOutM1)"
+     id="path11623-2"
+     d="M 589.65759,203.12358 V 193.11105" /><path
+     d="M 566.7935,223.14859 H 556.78097"
+     id="path2403"
+     style="fill:none;stroke:#2b2828;stroke-width:1.00125158px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#TriangleOutM1)"
+     inkscape:connector-curvature="0" /><text
+     transform="scale(1.0007154,0.99928513)"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.28803921px;font-family:'Ghoulish Fright AOE';-inkscape-font-specification:'Ghoulish Fright AOE';fill:#2b2828;stroke-width:0.77400333;"
+     id="text2405"
+     y="117.30484"
+     x="664.1084">%</text>
+<text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.05006409px;line-height:7.60000646%;font-family:DeadBitch;-inkscape-font-specification:DeadBitch;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.00125158px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="357.13272"
+     y="195.95456"
+     id="text2413"><tspan
+       sodipodi:role="line"
+       x="357.13272"
+       y="195.95456"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.28803921px;line-height:7.60000646%;font-family:'Ghoulish Fright AOE';-inkscape-font-specification:'Ghoulish Fright AOE';stroke-width:1.00125158px"
+       id="tspan2419">&lt;</tspan><tspan
+       sodipodi:role="line"
+       x="357.13272"
+       y="206.98529"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.28803921px;line-height:7.60000646%;font-family:'Ghoulish Fright AOE';-inkscape-font-specification:'Ghoulish Fright AOE';stroke-width:1.00125158px"
+       id="tspan2423">,</tspan></text>
+<text
+     id="text2429"
+     y="195.95456"
+     x="376.15329"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.05006409px;line-height:7.60000646%;font-family:DeadBitch;-inkscape-font-specification:DeadBitch;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.00125158px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       id="tspan2425"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.28803921px;line-height:7.60000646%;font-family:'Ghoulish Fright AOE';-inkscape-font-specification:'Ghoulish Fright AOE';stroke-width:1.00125158px"
+       y="195.95456"
+       x="376.15329"
+       sodipodi:role="line">&gt;</tspan><tspan
+       id="tspan2427"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.28803921px;line-height:7.60000646%;font-family:'Ghoulish Fright AOE';-inkscape-font-specification:'Ghoulish Fright AOE';stroke-width:1.00125158px"
+       y="206.98531"
+       x="376.15329"
+       sodipodi:role="line">.</tspan></text>
+</svg>

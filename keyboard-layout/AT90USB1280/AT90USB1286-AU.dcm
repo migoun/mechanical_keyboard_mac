@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AT90USB1286-AU
+D AT90USB1286-AU, 8 bit AVR Microcontroller 20MHz 128 kB, 4 kB Flash, 8 kB RAM, USB I2C 64-Pin TQFP
+K
+F https://www.arrow.com/en/products/at90usb1286-au/microchip-technology
+$ENDCMP
+#
+#End Doc Library

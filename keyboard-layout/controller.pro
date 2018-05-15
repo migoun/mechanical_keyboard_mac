@@ -1,6 +1,10 @@
-update=2018 May 13, Sunday 08:51:34
+update=2018 May 15, Tuesday 16:05:26
 version=1
-last_client=eeschema
+last_client=kicad
+[general]
+version=1
+RootSch=
+BoardNm=
 [pcbnew]
 version=1
 LastNetListRead=
@@ -23,8 +27,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -58,5 +60,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=keyboard_parts
-LibName31=at90usb1286
+LibName30=AT90USB1280/AT90USB1286-AU
+LibName31=keyboard_parts
