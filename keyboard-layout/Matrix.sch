@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -138,33 +138,9 @@ F 3 "" H 3900 4700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2850 4050 2850 4150
-Wire Wire Line
-	2700 4150 3900 4150
-Wire Wire Line
-	3900 4150 3900 4050
-Wire Wire Line
-	3550 3650 3650 3650
-Wire Wire Line
-	3650 3450 3650 4450
-Wire Wire Line
-	3650 4450 3550 4450
-Wire Wire Line
-	4600 3650 4700 3650
-Wire Wire Line
-	4700 3450 4700 4450
-Wire Wire Line
-	4700 4450 4600 4450
-Wire Wire Line
 	3900 3750 3900 3650
 Wire Wire Line
 	3900 3650 4000 3650
-Wire Wire Line
-	2850 4850 2850 4950
-Wire Wire Line
-	2700 4950 3900 4950
-Wire Wire Line
-	3900 4950 3900 4850
 Wire Wire Line
 	3900 4550 3900 4450
 Wire Wire Line
@@ -173,10 +149,6 @@ Wire Wire Line
 	2850 4550 2850 4450
 Wire Wire Line
 	2850 4450 2950 4450
-Connection ~ 2850 4150
-Connection ~ 2850 4950
-Connection ~ 3650 3650
-Connection ~ 4700 3650
 Text HLabel 3650 3450 1    60   Input ~ 0
 col0
 Text HLabel 4700 3450 1    60   Input ~ 0
