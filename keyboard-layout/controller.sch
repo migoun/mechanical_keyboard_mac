@@ -31,6 +31,7 @@ LIBS:valves
 LIBS:AT90USB1286-AU
 LIBS:keyboard_parts
 LIBS:controller-cache
+LIBS:matrix-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
