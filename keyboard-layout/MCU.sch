@@ -62,7 +62,7 @@ U 1 1 5B0040B9
 P 5450 6300
 F 0 "X1" H 5450 6450 60  0000 C CNN
 F 1 "XTAL_GND" H 5450 6150 60  0000 C CNN
-F 2 "Crystals:Crystal_SMD_SeikoEpson_FA238-4pin_3.2x2.5mm" H 5450 6300 60  0001 C CNN
+F 2 "keyboard_parts:FA-238" H 5450 6300 60  0001 C CNN
 F 3 "" H 5450 6300 60  0000 C CNN
 	1    5450 6300
 	1    0    0    -1  
@@ -167,10 +167,10 @@ F 3 "" H 2350 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW1
+L SW_PUSH SW_95
 U 1 1 5B0040C3
 P 3400 6050
-F 0 "SW1" H 3550 6160 50  0000 C CNN
+F 0 "SW_95" H 3550 6160 50  0000 C CNN
 F 1 "SW_PUSH" H 3400 5970 50  0000 C CNN
 F 2 "Buttons_Switches_SMD:SW_SPST_TL3342" H 3400 6050 60  0001 C CNN
 F 3 "" H 3400 6050 60  0000 C CNN
@@ -232,7 +232,7 @@ F 3 "" H 7400 3450 50  0001 C CNN
 	1    7400 3450
 	0    -1   -1   0   
 $EndComp
-Text Notes 6800 3300 0    60   ~ 0
+Text Notes 7650 3500 0    60   ~ 0
 HWB (Bootloader)
 $Comp
 L USB_mini_micro_B J1
@@ -367,34 +367,10 @@ F 3 "" H 5650 1800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 NoConn ~ 4300 2200
-NoConn ~ 5050 2200
-NoConn ~ 5200 2200
-NoConn ~ 5350 2200
 NoConn ~ 5500 2200
 NoConn ~ 5950 2200
 NoConn ~ 6100 2200
 NoConn ~ 6250 2200
-NoConn ~ 6600 2700
-NoConn ~ 6600 2850
-NoConn ~ 6600 3000
-NoConn ~ 6600 3150
-NoConn ~ 6600 3300
-NoConn ~ 6600 3600
-NoConn ~ 6600 3750
-NoConn ~ 6600 3900
-NoConn ~ 6600 4050
-NoConn ~ 6600 4200
-NoConn ~ 6600 4350
-NoConn ~ 6600 4500
-NoConn ~ 6600 4650
-NoConn ~ 6600 4800
-NoConn ~ 6600 4950
-NoConn ~ 6250 5450
-NoConn ~ 6100 5450
-NoConn ~ 5950 5450
-NoConn ~ 5800 5450
-NoConn ~ 5650 5450
-NoConn ~ 5500 5450
 NoConn ~ 5350 5450
 NoConn ~ 5200 5450
 NoConn ~ 4300 5450
@@ -415,14 +391,6 @@ Text HLabel 4450 1900 1    60   Input ~ 0
 row0
 Text HLabel 4600 1900 1    60   Input ~ 0
 row1
-Text HLabel 4750 1900 1    60   Input ~ 0
-col0
-Text HLabel 4900 1900 1    60   Input ~ 0
-col1
-Wire Wire Line
-	4900 2200 4900 1900
-Wire Wire Line
-	4750 2200 4750 1900
 Wire Wire Line
 	4600 2200 4600 1900
 Wire Wire Line
@@ -536,4 +504,105 @@ Wire Wire Line
 Wire Wire Line
 	5050 6300 5150 6300
 NoConn ~ 2500 3350
+Text HLabel 4750 1900 1    60   Input ~ 0
+row2
+Text HLabel 4900 1900 1    60   Input ~ 0
+row3
+Text HLabel 5050 1900 1    60   Input ~ 0
+row4
+Text HLabel 5200 1900 1    60   Input ~ 0
+row5
+Wire Wire Line
+	4750 1900 4750 2200
+Wire Wire Line
+	4900 1900 4900 2200
+Wire Wire Line
+	5050 2200 5050 1900
+Wire Wire Line
+	5200 1900 5200 2200
+NoConn ~ 5350 2200
+Text HLabel 6850 2700 2    60   Input ~ 0
+col0
+Text HLabel 6850 2850 2    60   Input ~ 0
+col1
+Text HLabel 6850 3000 2    60   Input ~ 0
+col2
+Text HLabel 6850 3150 2    60   Input ~ 0
+col3
+Text HLabel 6850 3300 2    60   Input ~ 0
+col4
+Text HLabel 6850 3600 2    60   Input ~ 0
+col5
+Text HLabel 6850 3750 2    60   Input ~ 0
+col6
+Text HLabel 6850 3900 2    60   Input ~ 0
+col7
+Text HLabel 6850 4050 2    60   Input ~ 0
+col8
+Text HLabel 6850 4200 2    60   Input ~ 0
+col9
+Text HLabel 6850 4350 2    60   Input ~ 0
+col10
+Text HLabel 6850 4500 2    60   Input ~ 0
+col11
+Text HLabel 6850 4650 2    60   Input ~ 0
+col12
+Text HLabel 6850 4800 2    60   Input ~ 0
+col13
+Text HLabel 6850 4950 2    60   Input ~ 0
+col14
+Text HLabel 6250 5700 3    60   Input ~ 0
+col15
+Text HLabel 6100 5700 3    60   Input ~ 0
+col16
+Text HLabel 5950 5700 3    60   Input ~ 0
+col17
+Text HLabel 5800 5700 3    60   Input ~ 0
+col18
+Text HLabel 5650 5700 3    60   Input ~ 0
+col19
+Text HLabel 5500 5700 3    60   Input ~ 0
+col20
+Wire Wire Line
+	6600 2700 6850 2700
+Wire Wire Line
+	6600 2850 6850 2850
+Wire Wire Line
+	6600 3000 6850 3000
+Wire Wire Line
+	6600 3150 6850 3150
+Wire Wire Line
+	6600 3300 6850 3300
+Wire Wire Line
+	6600 3600 6850 3600
+Wire Wire Line
+	6850 3750 6600 3750
+Wire Wire Line
+	6600 3900 6850 3900
+Wire Wire Line
+	6600 4050 6850 4050
+Wire Wire Line
+	6600 4200 6850 4200
+Wire Wire Line
+	6600 4350 6850 4350
+Wire Wire Line
+	6850 4500 6600 4500
+Wire Wire Line
+	6600 4650 6850 4650
+Wire Wire Line
+	6850 4800 6600 4800
+Wire Wire Line
+	6600 4950 6850 4950
+Wire Wire Line
+	6250 5700 6250 5450
+Wire Wire Line
+	6100 5450 6100 5700
+Wire Wire Line
+	5950 5450 5950 5700
+Wire Wire Line
+	5800 5450 5800 5700
+Wire Wire Line
+	5650 5700 5650 5450
+Wire Wire Line
+	5500 5450 5500 5700
 $EndSCHEMATC
