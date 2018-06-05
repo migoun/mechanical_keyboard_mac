@@ -3,7 +3,7 @@
   (general
     (links 328)
     (no_connects 230)
-    (area -21.864 -14.950001 449.815 169.565)
+    (area -21.864 -6.26 449.815 169.565)
     (thickness 1.6)
     (drawings 0)
     (tracks 0)
@@ -4874,7 +4874,7 @@
   )
 
   (module keyboard_parts:D_SOD123W_hand (layer B.Cu) (tedit 561B69E3) (tstamp 5B09BEF0)
-    (at 137 63 90)
+    (at 136.5 63 90)
     (path /5AFAEA09/5B050CF2)
     (attr smd)
     (fp_text reference D0 (at 0 -1.925 90) (layer B.SilkS)
