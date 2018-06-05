@@ -11,5 +11,5 @@ git clone https://github.com/ahtn/keyboard_case_and_pcb_gen .<br>
 Download json from KLE and then execute<br>
 plate.py keyboard-layout.json
 
-Micro Controller for Full Size Layout (28 Pins for the Matrix, additional for LEDs etc). AT90USB1286 is supported by the Quantum Mechanical Keyboard Firmware (https://github.com/qmk/qmk_firmware) and has 48 Inputs.<br>
+Micro Controller for Full Size Layout (27 Pins for the Matrix, additional for LEDs etc). AT90USB1286 is supported by the Quantum Mechanical Keyboard Firmware (https://github.com/qmk/qmk_firmware) and has 48 Inputs.<br>
 KiCAD Component: at90usb1286.dcm, at90usb1286.lib
