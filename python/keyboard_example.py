@@ -33,5 +33,5 @@ keylist = ['Esc','1','2','3','4','5','6','7','8','9','0','-','=','BkSp','Light',
 'Lshft','`','Z','X','C','V','B','N','M',',','.','/','Rshft','Up','1','2','3','Ret',
 'Ctrl','Alt','Cmd','Space','Cmd','Alt','Fn','Left','Down','Right','0','.']
 
-for x in range(0, len(keylist)):
+for x in range(0, len(keylist) - 1):
     board.FindModuleByReference('SW' + x.__str__()).SetValue(keylist[x])
