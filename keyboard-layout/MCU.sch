@@ -510,16 +510,12 @@ Text HLabel 4900 1900 1    60   Input ~ 0
 row3
 Text HLabel 5050 1900 1    60   Input ~ 0
 row4
-Text HLabel 5200 1900 1    60   Input ~ 0
-row5
 Wire Wire Line
 	4750 1900 4750 2200
 Wire Wire Line
 	4900 1900 4900 2200
 Wire Wire Line
 	5050 2200 5050 1900
-Wire Wire Line
-	5200 1900 5200 2200
 NoConn ~ 5350 2200
 Text HLabel 6850 2700 2    60   Input ~ 0
 col0
@@ -605,4 +601,5 @@ Wire Wire Line
 	5650 5700 5650 5450
 Wire Wire Line
 	5500 5450 5500 5700
+NoConn ~ 5200 2200
 $EndSCHEMATC
