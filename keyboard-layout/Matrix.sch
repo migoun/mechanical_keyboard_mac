@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr User 23622 11811
 encoding utf-8
-Sheet 2 3
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -2609,8 +2609,6 @@ Connection ~ 21000 3800
 Wire Wire Line
 	22000 3800 22000 3700
 Connection ~ 22000 3800
-Wire Wire Line
-	900  5600 22000 5600
 Connection ~ 9000 3300
 Connection ~ 2900 3300
 Connection ~ 3900 3300
@@ -2706,8 +2704,6 @@ Connection ~ 19000 6500
 Wire Wire Line
 	22000 5600 22000 5200
 Wire Wire Line
-	900  6500 21000 6500
-Wire Wire Line
 	22000 7400 22000 7300
 Wire Wire Line
 	21000 7400 21000 7300
@@ -2751,7 +2747,7 @@ Wire Wire Line
 	1100 6400 1100 6500
 Connection ~ 1100 6500
 Wire Wire Line
-	2100 6400 2100 6500
+	2100 6500 2100 6400
 Connection ~ 2100 6500
 Wire Wire Line
 	3100 6400 3100 6500
@@ -2814,8 +2810,6 @@ Text HLabel 900  4700 0    60   Input ~ 0
 row1
 Text HLabel 900  5600 0    60   Input ~ 0
 row2
-Text HLabel 900  6500 0    60   Input ~ 0
-row3
 Text HLabel 900  7400 0    60   Input ~ 0
 row4
 Text HLabel 2900 3100 1    60   Input ~ 0
@@ -2880,4 +2874,10 @@ Connection ~ 7200 5600
 Wire Wire Line
 	8200 5500 8200 5600
 Connection ~ 8200 5600
+Wire Wire Line
+	900  5600 22000 5600
+Text HLabel 900  6500 0    60   Input ~ 0
+row3
+Wire Wire Line
+	900  6500 21000 6500
 $EndSCHEMATC

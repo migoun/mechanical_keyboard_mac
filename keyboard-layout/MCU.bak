@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -368,18 +368,13 @@ F 3 "" H 5650 1800 50  0001 C CNN
 $EndComp
 NoConn ~ 4300 2200
 NoConn ~ 5500 2200
-NoConn ~ 5950 2200
-NoConn ~ 6100 2200
-NoConn ~ 6250 2200
+NoConn ~ 4450 2200
+NoConn ~ 4600 2200
+NoConn ~ 4750 2200
 NoConn ~ 5350 5450
 NoConn ~ 5200 5450
-NoConn ~ 4300 5450
-NoConn ~ 4150 5450
-NoConn ~ 4000 5450
-NoConn ~ 3650 4950
-NoConn ~ 3650 4800
-NoConn ~ 3650 4650
-NoConn ~ 3650 4500
+NoConn ~ 5050 2200
+NoConn ~ 4900 2200
 NoConn ~ 3650 4350
 NoConn ~ 3650 4200
 NoConn ~ 3650 4050
@@ -387,14 +382,10 @@ NoConn ~ 3650 3900
 NoConn ~ 3650 3750
 NoConn ~ 3650 2850
 NoConn ~ 3650 2700
-Text HLabel 4450 1900 1    60   Input ~ 0
+Text HLabel 6250 2200 1    60   Input ~ 0
 row0
-Text HLabel 4600 1900 1    60   Input ~ 0
+Text HLabel 6100 2200 1    60   Input ~ 0
 row1
-Wire Wire Line
-	4600 2200 4600 1900
-Wire Wire Line
-	4450 2200 4450 1900
 Wire Wire Line
 	5650 2200 5650 1800
 Wire Wire Line
@@ -504,18 +495,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 6300 5150 6300
 NoConn ~ 2500 3350
-Text HLabel 4750 1900 1    60   Input ~ 0
-row2
-Text HLabel 4900 1900 1    60   Input ~ 0
-row3
-Text HLabel 5050 1900 1    60   Input ~ 0
-row4
-Wire Wire Line
-	4750 1900 4750 2200
-Wire Wire Line
-	4900 1900 4900 2200
-Wire Wire Line
-	5050 2200 5050 1900
 NoConn ~ 5350 2200
 Text HLabel 6850 2700 2    60   Input ~ 0
 col0
@@ -551,13 +530,13 @@ Text HLabel 6250 5700 3    60   Input ~ 0
 col15
 Text HLabel 6100 5700 3    60   Input ~ 0
 col16
-Text HLabel 5950 5700 3    60   Input ~ 0
+Text HLabel 3650 4950 0    60   Input ~ 0
 col17
-Text HLabel 5800 5700 3    60   Input ~ 0
+Text HLabel 3650 4800 0    60   Input ~ 0
 col18
-Text HLabel 5650 5700 3    60   Input ~ 0
+Text HLabel 3650 4650 0    60   Input ~ 0
 col19
-Text HLabel 5500 5700 3    60   Input ~ 0
+Text HLabel 3650 4500 0    60   Input ~ 0
 col20
 Wire Wire Line
 	6600 2700 6850 2700
@@ -593,13 +572,17 @@ Wire Wire Line
 	6250 5700 6250 5450
 Wire Wire Line
 	6100 5450 6100 5700
-Wire Wire Line
-	5950 5450 5950 5700
-Wire Wire Line
-	5800 5450 5800 5700
-Wire Wire Line
-	5650 5700 5650 5450
-Wire Wire Line
-	5500 5450 5500 5700
 NoConn ~ 5200 2200
+Text HLabel 5950 2200 1    60   Input ~ 0
+row2
+Text HLabel 4150 5450 3    60   Input ~ 0
+row3
+Text HLabel 4300 5450 3    60   Input ~ 0
+row4
+Text HLabel 4000 5450 3    60   Input ~ 0
+Mosfet
+NoConn ~ 5500 5450
+NoConn ~ 5650 5450
+NoConn ~ 5800 5450
+NoConn ~ 5950 5450
 $EndSCHEMATC
