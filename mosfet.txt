@@ -1,0 +1,18 @@
+RDS = Resistance between Drain / Source
+5V!
+
+Treshold (VGS / VTH). Voltage from Gate to Source
+< 5V = Low Level
+
+Power Usage:
+P = RDS * I^2
+(I + Total Current of all LEDs)
+Look at Datasheet Limits. Heatsink or not
+
+Temparature
+P = (Max Junction Temp - Ambient) / Rja
+(175c - 25c) / 62.2c/w
+= 2.4 Watts
+
+Power Usage < Temp Limit ?
+

@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -375,8 +375,6 @@ NoConn ~ 5350 5450
 NoConn ~ 5200 5450
 NoConn ~ 5050 2200
 NoConn ~ 4900 2200
-NoConn ~ 3650 4350
-NoConn ~ 3650 4200
 NoConn ~ 3650 4050
 NoConn ~ 3650 3900
 NoConn ~ 3650 3750
@@ -530,13 +528,13 @@ Text HLabel 6250 5700 3    60   Input ~ 0
 col15
 Text HLabel 6100 5700 3    60   Input ~ 0
 col16
-Text HLabel 3650 4950 0    60   Input ~ 0
-col17
-Text HLabel 3650 4800 0    60   Input ~ 0
-col18
 Text HLabel 3650 4650 0    60   Input ~ 0
-col19
+col17
 Text HLabel 3650 4500 0    60   Input ~ 0
+col18
+Text HLabel 3650 4350 0    60   Input ~ 0
+col19
+Text HLabel 3650 4200 0    60   Input ~ 0
 col20
 Wire Wire Line
 	6600 2700 6850 2700
@@ -575,9 +573,9 @@ Wire Wire Line
 NoConn ~ 5200 2200
 Text HLabel 5950 2200 1    60   Input ~ 0
 row2
-Text HLabel 4150 5450 3    60   Input ~ 0
+Text HLabel 3650 4800 0    60   Input ~ 0
 row3
-Text HLabel 4300 5450 3    60   Input ~ 0
+Text HLabel 3650 4950 0    60   Input ~ 0
 row4
 Text HLabel 4000 5450 3    60   Input ~ 0
 Mosfet
@@ -585,4 +583,6 @@ NoConn ~ 5500 5450
 NoConn ~ 5650 5450
 NoConn ~ 5800 5450
 NoConn ~ 5950 5450
+NoConn ~ 4300 5450
+NoConn ~ 4150 5450
 $EndSCHEMATC
