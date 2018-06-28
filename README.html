@@ -1,0 +1,59 @@
+# mechanical_keyboard_mac
+This is a guide for building a custom mechanical keyboard from scratch. I use it on a Mac, but there is no hardwired difference to a PC keyboard. There's another keymapping, only. But I'm compiling a custom firmware here anyway, which includes - defining a keymap<br>
+  Besides the technical side, I'll also write about my experience with manufacturers and stores, where I got all the parts. I made a few mistakes which others can avoid, by reading this.
+<br><br>
+
+<b>Crash Course</b><br>
+There's a phenomenal guide on how to build a keyboard here: https://github.com/ruiqimao/keyboard-pcb-guide <br>
+If you don't have a clue yet, and have to start from the very beginning, then that's your starting point. I did it as well, because I had no idea from anything when I started. Through this guide I learned what components are needed to build a mechanical keyboard, what techniques / software is used to design electronic circuit boards, and a lot about electronics in general. Without this guide, I'd have never started.<br><br>
+
+<b>Layout Creation</b><br>
+First, get an idea of how your keyboard should look like: http://www.keyboard-layout-editor.com<br>
+This was my basic idea: http://www.keyboard-layout-editor.com/#/gists/c6ae22aae21851b44d510154a7a343f7<br>
+The layout kept the same during the built, the keycaps are not exactly like in this draft. Because when I ordered the keycaps, I could chose only a few base colors, but therefore design my own printings on top of it (vectorized).<br>
+<br>
+
+<b>LED's for backlight</b><br>
+This is not as easy as it might sound like. An LED has about 2,1 - 2,3 Volts. Powering a single one with an Output pin of an Atmel Microchip is not a problem. Powering multiple LEDs needs a transistor for providing that extra power. I took a MOSFET for that. (Before I started this project, I had no idea what a MOSFET is, or how an LED Circuit is powered. If you want to learn this, https://www.tinkercad.com/circuits is a great source for getting in touch with electronics (virtually).<br><br>
+
+That turned out helpful, but I wanted to be 100% sure about this. The last thing I wanted, was that my keyboard burned to dust. So I got a cheap Arduino Uno (16 € with a lot of extras), also 2 extra MOSFETs from Amazon, and built up this scenario: <br>
+<img src="pics/arduino.jpeg" width=600/><br>
+There were only 330 Ohm resistors in the package, resulting in 5.5 mA going through each LED. I wanted about 8 or 9 mA, so I calculated here what I needed: http://tinyurl.com/y8kq7h9s<br>
+<img src="pics/circuit.jpg" /><br>
+Source: http://www.falstad.com/circuit/ (Also a great electronics simulator)<br>
+<br>
+200 Ohm resistors seemed fine for me. To wrap this up: The MOSFET is there because it takes power directly from the source and can handle a big amount of current. The gate controls the amount of current going through the transistor, this controls the brightness of the LEDs. Therefore gate is connected to a PWM (Pulse Width Modulation) pin on the MCU. The special thing about this particular transistor is, it doesn't need current at the gate - only Voltage. This protects the Atmel chip from burned at it's PWM pin. This circuit is in parallel mode, so these single color LED's cannot be controlled separately. This should be as easy as possible, because it was my first board.<br>
+
+<br>
+<b>Schematic</b><br>
+Micro Controller for Full Size Layout (27 Pins for the Matrix, additional for LEDs etc). AT90USB1286 is supported by the Quantum Mechanical Keyboard Firmware (https://github.com/qmk/qmk_firmware) and has 48 Inputs.<br>
+<img src="pics/schema2.jpg" /><br>
+<img src="pics/schema1.jpg" /><br>
+<img src="pics/schema3.jpg" /><br>
+<br>
+
+<b>PCB design</b><br>
+PCB Creator script<br>
+brew install pip3 python3<br>
+pip3 install nose tornado solidpython numpy scipy kle pyparsing pyaml<br>
+git clone https://github.com/ahtn/keyboard_case_and_pcb_gen .<br>
+Download json from KLE and then execute<br>
+plate.py keyboard-layout.json<br>
+
+<br>
+<b>PCB Production</b><br>
+
+<br>
+<b>Components</b><br>
+
+
+<br>
+<b>Firmware</b><br>
+
+<br>
+<b>Building a case</b><br>
+- Mounting plate
+- Acrylic case<br>
+
+<br>
+<b>Keycaps</b><br>
