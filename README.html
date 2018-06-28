@@ -1,5 +1,5 @@
-# mechanical_keyboard_mac
-This is a guide for building a custom mechanical keyboard from scratch. I use it on a Mac, but there is no hardwired difference to a PC keyboard. There's another keymapping, only. But I'm compiling a custom firmware here anyway, which includes - defining a keymap<br>
+# mechanical_keyboard_mac<br>
+This is a guide for building a custom mechanical keyboard from scratch. I use it on a Mac, but there is no hardwired difference to a PC keyboard. There's another keymapping, only. But I'm compiling a custom firmware here anyway, which includes - defining a keymap. All screenshots and scripting examples here are from my mac, though. Therefore the title.<br>
   Besides the technical side, I'll also write about my experience with manufacturers and stores, where I got all the parts. I made a few mistakes which others can avoid, by reading this.
 <br><br>
 
@@ -9,12 +9,52 @@ If you don't have a clue yet, and have to start from the very beginning, then th
 
 <b>Layout Creation</b><br>
 First, get an idea of how your keyboard should look like: http://www.keyboard-layout-editor.com<br>
-This was my basic idea: http://www.keyboard-layout-editor.com/#/gists/c6ae22aae21851b44d510154a7a343f7<br>
-The layout kept the same during the built, the keycaps are not exactly like in this draft. Because when I ordered the keycaps, I could chose only a few base colors, but therefore design my own printings on top of it (vectorized).<br>
+What you can get in reality, depends on the manufacturer. F. i. I designed custom printed keycaps and ordered them at maxkeyboard.com. It's a vectorized printing, good quality. But 1 - 2 keycaps had little damage marks, which was annoying.<br>
 <br>
 
+<br>
+<b>Schematic</b><br>
+I did mostly everything like in the keyboard-pcb-guide tutorial. But i needed a different Micro Chip, because I wanted to build a bigger keyboard with 85 keys. So with all rows and columns, I needed a total of 27 input pins for the matrix. Because QMK's firmware is used to flash the MCU, I took the one supported by QMK - AT90USB1286. It has a total of 48 input pins, so more than enough for Matrix and LED control pin.<br><br>
+This is an overview of the board. Separated in 3 parts. LED circuit, keyboard matrix and the MCU section.<br><br>
+<img src="pics/schema2.jpg" /><br><br>
+
+Matrix and MCU circuit:<br>
+<img src="pics/schema1.jpg" /><br>
+<img src="pics/schema3.jpg" /><br>
+<br>
+For the matrix, I just looked at kbfirmware.com, the QMK firmware generator. I connected the keys in the schematic above exactly like the firmware tool defined my cols and rows:<br>
+<img src="pics/keywiring.jpg" /><br><br>
+
+Aditionally the LED's for the backlighting:<br>
+<img src="pics/schema4.jpg" /><br>
+<br>
+
+<b>PCB design</b><br>
+Normally you'd have to draw the PCB all by yourself, for all keys you have! I however, used a python script from here: https://github.com/ahtn/keyboard_case_and_pcb_gen<br>
+You need the json output from KLE for this script to work. With this it generates a finished layout for all keys on the board. Then you have to put in everything else, MCU, diodes, resistors etc...<br><br>
+
+But there are a few steps to get it working (on a mac). You need Homebrew and a lot of libraries, only then you can execute the script without getting an error:<br>
+brew install pip3 python3<br>
+pip3 install nose tornado solidpython numpy scipy kle pyparsing pyaml<br>
+git clone https://github.com/ahtn/keyboard_case_and_pcb_gen .<br>
+<br>
+Download json from KLE and then execute:<br>
+plate.py keyboard-layout.json<br>
+<br><br>
+By the time I needed to troubleshoot this script, I could have drawn the PCB already (now). But when I started, I didn't have any experience with KiCAD, and had no idea of positioning the keys, defining footprints etc...so I thought it would be easier to run a script.<br><br>
+
+I'd also recommend, looking at the keyboard_example.py script in the python folder here. Because after importing your netlist into PCBnew, all existing pieces are on top of each other. So you have to click and drag each one to it's physical place on the board. Especially for the diodes, that can be frustrating, because you have to do this for every switch. That's what i wrote the python script for.<br><br>
+After all, this is my result:<br>
+<img src="pics/pcb1.jpg" /><br><br>
+You can use the silkscreen to print your own logo or text on the board. Kicad layers: F. Silk = Front Side, B. Silk = Back Side<br>
+<img src="pics/pcb2.jpg" width="400px" />
+
+<b>PCB Production</b><br>
+<br>
+After comparing a few manufacturers, I let it made at easyeda.com. You get an online quote immediately after uploading your Gerber files, and it was a very good price. Only 2 weeks after ordering, I had it. Even though it came from Hong Kong! Really hard to beat that service. I saw that even on the weekends, the status of my order was making progress. I was very happy with this choice. <br><br>
+
 <b>LED's for backlight</b><br>
-This is not as easy as it might sound like. An LED has about 2,1 - 2,3 Volts. Powering a single one with an Output pin of an Atmel Microchip is not a problem. Powering multiple LEDs needs a transistor for providing that extra power. I took a MOSFET for that. (Before I started this project, I had no idea what a MOSFET is, or how an LED Circuit is powered. If you want to learn this, https://www.tinkercad.com/circuits is a great source for getting in touch with electronics (virtually).<br><br>
+This is not as easy as it might sound like. An LED has about 2,1 - 2,3 Volts. Powering a single one with an Output pin of an Atmel Microchip is not a problem. Powering multiple LEDs needs a transistor for providing extra power. I took a MOSFET for that. (Before I started this project, I had no idea what a MOSFET is, or how an LED Circuit is powered. If you want to learn this, https://www.tinkercad.com/circuits is a great source for getting in touch with electronics (virtually).<br><br>
 
 That turned out helpful, but I wanted to be 100% sure about this. The last thing I wanted, was that my keyboard burned to dust. So I got a cheap Arduino Uno (16 € with a lot of extras), also 2 extra MOSFETs from Amazon, and built up this scenario: <br>
 <img src="pics/arduino.jpeg" width=600/><br>
@@ -22,30 +62,31 @@ There were only 330 Ohm resistors in the package, resulting in 5.5 mA going thro
 <img src="pics/circuit.jpg" /><br>
 Source: http://www.falstad.com/circuit/ (Also a great electronics simulator)<br>
 <br>
-200 Ohm resistors seemed fine for me. To wrap this up: The MOSFET is there because it takes power directly from the source and can handle a big amount of current. The gate controls the amount of current going through the transistor, this controls the brightness of the LEDs. Therefore gate is connected to a PWM (Pulse Width Modulation) pin on the MCU. The special thing about this particular transistor is, it doesn't need current at the gate - only Voltage. This protects the Atmel chip from burned at it's PWM pin. This circuit is in parallel mode, so these single color LED's cannot be controlled separately. This should be as easy as possible, because it was my first board.<br>
-
-<br>
-<b>Schematic</b><br>
-Micro Controller for Full Size Layout (27 Pins for the Matrix, additional for LEDs etc). AT90USB1286 is supported by the Quantum Mechanical Keyboard Firmware (https://github.com/qmk/qmk_firmware) and has 48 Inputs.<br>
-<img src="pics/schema2.jpg" /><br>
-<img src="pics/schema1.jpg" /><br>
-<img src="pics/schema3.jpg" /><br>
-<br>
-
-<b>PCB design</b><br>
-PCB Creator script<br>
-brew install pip3 python3<br>
-pip3 install nose tornado solidpython numpy scipy kle pyparsing pyaml<br>
-git clone https://github.com/ahtn/keyboard_case_and_pcb_gen .<br>
-Download json from KLE and then execute<br>
-plate.py keyboard-layout.json<br>
-
-<br>
-<b>PCB Production</b><br>
+200 Ohm resistors seemed fine for me. To wrap this up: The MOSFET is there because it takes power directly from the source and can handle a big amount of current. The gate controls the amount of current going through the transistor, this controls the brightness of the LEDs. Therefore gate is connected to a PWM (Pulse Width Modulation) pin on the MCU. The special thing about this particular transistor is, it doesn't need current at the gate - only Voltage. This protects the Atmel chip and it's PWM pin. This circuit is in parallel mode, so these single color LED's cannot be controlled separately. This should be as easy as possible, because it was my first board.<br>
 
 <br>
 <b>Components</b><br>
-
+<br>
+I've ordered everything at Digikey.com. It came by DHL, was kept 3 days at the toll office, but I didn't have to pay anything else. So I lucked out I guess. Digikey writes that normally UPS is somehow toll free. Anyway, I would read the shipping faq's carefully. You can also order at mouser.com, it's the same great choice and filtering mechanism. Dependend on your home country, I guess.<br>
+One shitty thing though, shipping is very expensive (in both stores). So either you pay 20 bucks for shipping, or order something for more that 60 bucks, then shipping is free. For this particular component list however, shipping would cost more that the whole stuff together: (at least to Germany)<br><br>
+<table>
+<tr><td><b>Quantity</b></td><td><b>Description</b></td></tr>
+<tr><td>1</td>		<td>IC MCU AT90USB1286</td></tr>
+<tr><td>10</td>		<td>RES 200 OHM 1% 1/4W 0805</td></tr>
+<tr><td>1</td>		<td>CRYSTAL 16.0000MHZ 18PF SMD</td></tr>
+<tr><td>1</td>		<td>CAP CER 1UF 16V X7R 0805</td></tr>
+<tr><td>100</td>	<td>DIODE GEN PURP 100V 150MA SOD123</td></tr>
+<tr><td>10</td>		<td>RES 22 OHM 5% 1/8W 0805</td></tr>
+<tr><td>1</td>		<td>CAP CER 4.7UF 25V X5R 0805</td></tr>
+<tr><td>1</td>		<td>SWITCH TACTILE SPST-NO 0.05A 12V</td></tr>
+<tr><td>1</td>		<td>CONN RCPT MINI USB2.0 5POS SLD</td></tr>
+<tr><td>2</td>		<td>CAP CER 22PF 50V C0G/NP0 0805</td></tr>
+<tr><td>3</td>		<td>CAP CER 0.1UF 50V X7R 0805</td></tr>
+<tr><td>10</td>		<td>RES 10K OHM 5% 1/8W 0805</td></tr>
+<tr><td>2</td>		<td>RES SMD 1K OHM 0.1% 1/8W 0805</td></tr>
+<tr><td>10</td>		<td>LED GREEN DIFFUSED 1206 SMD</td></tr>
+<tr><td>1</td>		<td>MOSFET N-CH 30V 58A DPAK</td></tr>
+</table>
 
 <br>
 <b>Firmware</b><br>
