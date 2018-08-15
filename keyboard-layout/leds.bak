@@ -56,7 +56,7 @@ F 3 "" H 3150 1050 50  0001 C CNN
 	1    3150 1050
 	1    0    0    -1  
 $EndComp
-Text HLabel 1950 2400 0    60   Output ~ 0
+Text HLabel 1950 2400 0    60   Input ~ 0
 Mosfet
 $Comp
 L BSP129 Q1
