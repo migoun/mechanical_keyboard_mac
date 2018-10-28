@@ -8,46 +8,66 @@ I've built 2 keyboards with the same layouts but different components. <br><br>
 <img src="pics/original1.jpg" width="800" /><br>
 <img src="pics/original2.jpg" width="800" /><br>
 <br>
-2.) Gateron Black Switches, chrome- and bronze sprayed keycaps, fully transparent acrylic case and amber LEDs<br>
+2.) Gateron black switches, chrome- and bronze sprayed keycaps, fully transparent acrylic case and amber LEDs<br>
+<img src="pics/kb2_light.jpg" /><br>
+<img src="pics/kb2_dark.jpg" /><br>
 <br>
 
-<b>Crash Course</b><br>
+<div id="toc_container">
+<p class="toc_title">Contents</p>
+<ul class="toc_list">
+    <li><a href="#crashcourse">Crash Course</a></li>    
+    <li><a href="#layoutcreation">Layout Creation</a></li>
+    <li><a href="#schematic">Schematic</a></li>
+    <li><a href="#pcbdesign">PCB Design</a></li>
+    <li><a href="#pcbproduction">PCB Production</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#switches">Switches and Stabilizers</a></li>
+    <li><a href="#keycaps">Keycaps</a></li>
+    <li><a href="#lasering">Lasering a Sandwich Case</a></li>
+    <li><a href="#soldering">Soldering and assembling</a></li>
+    <li><a href="#firmware">Firmware</a></li>
+    <li><a href="#mistakes">Mistakes</a></li>
+</ul>
+</div>
+
+<h3 id="crashcourse">Crash Course</h3>
 There's a phenomenal guide on how to build a keyboard here: https://github.com/ruiqimao/keyboard-pcb-guide <br>
 If you don't have a clue yet, and have to start from the very beginning, then that's your starting point. I did it as well, because I had no idea from anything when I started. Through this guide I learned what components are needed to build a mechanical keyboard, what techniques / software is used to design electronic circuit boards, and a lot about electronics in general. Without this guide, I'd have never started.<br><br>
 
-<b>Layout Creation</b><br>
+<h3 id="layoutcreation">Layout Creation</h3>
 First, get an idea of how your keyboard should look like: http://www.keyboard-layout-editor.com<br>
 This is mine: <a href="http://www.keyboard-layout-editor.com/#/gists/c6ae22aae21851b44d510154a7a343f7">Migouner</a>
 <br>
 
 <br>
-<b>Schematic</b><br>
+<h3 id="schematic">Schematic</h3>
 I did mostly everything like in the keyboard-pcb-guide tutorial. But I needed a different microcontroller, because I wanted to build a bigger keyboard with 85 keys. So with all rows and columns, I needed a total of 27 input pins for the matrix. Because QMK's firmware is used to flash the MCU, I took the one supported by QMK - AT90USB1286. It has a total of 48 input pins, so more than enough for Matrix and LED control pin.<br><br>
 This is an overview of the board. Separated in 3 parts. LED circuit, keyboard matrix and the MCU section.<br><br>
-<img src="pics/schema2.jpg" /><br><br>
+<img src="pics/schema1.png" /><br><br>
 
-Matrix and MCU circuit:<br>
-<img src="pics/schema1.jpg" /><br>
-<img src="pics/schema3.jpg" /><br>
+MCU and Matrix circuit:<br>
+<img src="pics/schema2.png" /><br>
+<img src="pics/schema3.png" /><br>
 <br>
 For the matrix, I just looked at kbfirmware.com, the QMK firmware generator. I connected the keys in the schematic above exactly like the firmware tool defined my cols and rows:<br>
 <img src="pics/keywiring.jpg" /><br><br>
 
 Aditionally the LED's for the backlighting:<br>
-<img src="pics/schema4.jpg" /><br>
+<img src="pics/schema4.png" /><br>
 <br>
 
-<b>PCB design</b><br>
+<h3 id="pcbdesign">PCB design</h3>
 Normally you'd have to draw the PCB all by yourself, for all keys you have! I however, used a python script from here: https://github.com/ahtn/keyboard_case_and_pcb_gen<br>
 You need the json output from KLE for this script to work. With this it generates a finished layout for all keys on the board. Then you have to put in everything else, MCU, diodes, resistors etc...<br><br>
 
 But there are a few steps to get it working (on a mac). You need Homebrew and a lot of libraries, only then you can execute the script without getting an error:<br>
-brew install pip3 python3<br>
-pip3 install nose tornado solidpython numpy scipy kle pyparsing pyaml<br>
-git clone https://github.com/ahtn/keyboard_case_and_pcb_gen .<br>
+> brew install pip3 python3<br>
+> pip3 install nose tornado solidpython numpy scipy kle pyparsing pyaml<br>
+> git clone https://github.com/ahtn/keyboard_case_and_pcb_gen .<br>
 <br>
 Download json from KLE and then execute:<br>
-plate.py keyboard-layout.json<br>
+> plate.py keyboard-layout.json<br>
 <br><br>
 By the time I needed to troubleshoot this script, I could have drawn the PCB already (now). But when I started, I didn't have any experience with KiCAD, and had no idea of positioning the keys, defining footprints etc...so I thought it would be easier to run a script.<br><br>
 
@@ -57,10 +77,10 @@ After all, this is my result:<br>
 You can use the silkscreen to print your own logo or text on the board. Kicad layers: F. Silk = Front Side, B. Silk = Back Side<br>
 <img src="pics/pcb2.jpg" width="400px" /><br><br>
 
-<b>PCB Production</b><br>
+<h3 id="pcbproduction">PCB Production</h3>
 After comparing a few manufacturers, I let it made at easyeda.com. You get an online quote immediately after uploading your Gerber files, and it was a very good price. But I ran into a massive delay because the german customs office. More in the mistakes section below. But the quality was perfectly fine. As I'm writing this, I already made 3 orders there, all of them were really well done and also cheap, compaired to other manufacturers.<br><br>
 
-<b>LED's for backlight</b><br>
+<h3>LED's for backlight</h3>
 This is not as easy as it might sound like. An LED has about 2,1 - 2,3 Volts. Powering a single one with an Output pin of an Atmel Microchip is not a problem. Powering multiple LEDs needs a transistor for taking over the extra power. I took a MOSFET for that. (Before I started this project, I had no idea what a MOSFET is, or how an LED Circuit is powered. If you want to learn this, https://www.tinkercad.com/circuits is a great source for getting in touch with electronics (virtually).<br><br>
 
 That turned out helpful, but I wanted to be 100% sure about this. The last thing I wanted, was that my keyboard burned to dust. So I got a cheap Arduino Uno (16&euro; with a lot of extras), also 2 extra MOSFETs from Amazon, and built up this scenario: <br>
@@ -72,7 +92,7 @@ Source: http://www.falstad.com/circuit/ (Also a great electronics simulator)<br>
 200 Ohm resistors seemed fine for me. To wrap this up: The MOSFET is there because it takes power directly from the source and can handle a big amount of current. The gate controls the amount of current going through the transistor, controling the brightness of the LEDs. Therefore gate is connected to a PWM (Pulse Width Modulation) pin on the MCU. The special thing about this particular transistor is, it doesn't need current at the gate - only Voltage. This protects the Atmel chip and it's PWM pin. This circuit is in parallel mode, so these single color LED's cannot be controlled separately. It should be as easy as possible to build.<br>
 
 <br>
-<b>Components</b><br>
+<h3 id="components">Components</h3>
 I've ordered everything at Digikey.com. But I recommend would read the shipping faq's carefully. I explain why in the mistakes secion below. Another good choice is mouser.com, it's the same great choice and filtering mechanism.<br>
 One shitty thing though, shipping is very expensive (in both stores). So either you pay 20$ for shipping, or order something for more that 60$, in which case shipping is free. At least to Germany. So here's my component list:<br><br>
 <table>
@@ -95,22 +115,25 @@ One shitty thing though, shipping is very expensive (in both stores). So either 
 </table>
 
 <br>
-<b>Switches and Stabilizers</b><br>
+<h3 id="switches">Switches and Stabilizers</h3>
 I made the black board with Cherry brown switches, and the transparent one with Gateron black switches. You'll find a lot about switch types yourself, so I won't go into detail here. Interesting was that Gateron costs only half the price of Cherry. It claims to be the same, though. So I wanted to try out both of them. Same goes for stabilizers. Cherry stabs are more expensive than Costar. I used Cherry stabs for the Cherry switches and Costar for the Gateron switches. Good place to find stuff like that is at <a href="https://www.switchtop.com/">Switchtop</a>.<br>
+<br>My result: The Cherry Brown Switches were easy to install and fit stable in the mounting holes "MX Openable Cutout". Also typing feels quite good on them. This combination of switches and plate is a robust and solid one. My personal favourite.<br>
+The Gaterons are quite good, not a big difference to Cherry. However, the mounting holes I have chosen for the Gaterons when making the mounting plate - "MX + Alps Cutout" - it is known as the least stable. Now I know why. And it saved maybe 1 - 2$ maximum, when lasering the plate. So NOT recommendable. The other MX cutout could be used as well here.<br>
+The Costar stabilizers are much more difficult to install, almost not stable at all, and I had to cut them with my wirecutter, so they didn't grind the bracket while going up and down. For me it wasn't fun using them. Clear advantage for the Cherry stabilizers, which fit pretty well and could be installed more quickly.<br>
 Also a tube of Superlube is recommendable, greasing the stabilizers makes them go more smoothly.<br><br>
 Important: PCB mounting is different from plate mounting. It changes your whole build. Stabilizers and switches are different, the PCB needs another design for drill holes etc, and the mounting plate's switch holes can be different. So be sure which mounting style you want. I went with plate mount, because more stability - the typing pressure is taken by the metal plate instead of the PCB, also fewer drilling holes on the PCB. If your PCB was made for PCB mount, it can also be used for plate mount. Not the other way.<br>
 
 <br>
-<b>Keycaps</b><br>
+<h3 id="keycaps">Keycaps</h3>
 For the black Rebound Games keyboard, I made custom keycaps at <a href="http://www.maxkeyboard.com/">MaxKeyboard</a>. They got templates for vector software, I use Inkscape. There are some limitations with the colors, but that was fine for my design. So I uploaded my Inkscape file and ordered the key set. Prices for custom printed key sets start at only 20$, so I could live with the color limitations.<br>
 What wasn't so nice, some keys were slightly damaged. Looked like burn marks on the edges, but still fully functional. At least the printing was good.
 <br><br>
 For the second one I've ordered the cheapest keyset I could find on ebay, about 10&euro;. I sprayed them in bronze and chrome colors. In combination with the fully transparent case and the amber LEDs, it should get a futuristic style.<br>
-<img src="pics/bronzespray.jpg" />
+<img src="pics/bronzespray.jpg" width="800"/>
 <br>
 
 <br>
-<b>Lasering a sandwich case</b><br>
+<h3 id="lasering">Lasering a sandwich case</h3>
 A very handy tool and also your starting point for case design: <a href="http://builder.swillkb.com/">builder.swillkb.com</a><br>
 It creates all parts of a sandwich case keyboard, you just have to put in your layout from keyboard-layout-editor.com, and adjust the settings, it's well documented.<br>
 <ul>
@@ -127,7 +150,7 @@ It creates all parts of a sandwich case keyboard, you just have to put in your l
 </ul>
 
 <br>
-<b>Soldering and assembling</b><br>
+<h3 id="soldering">Soldering and assembling</h3>
 If you never soldered SMDs (Surface Mount Devices), I highly recommend a practise pcb before start soldering your board. I bought one for 2&euro; on ebay. Also check out youtube tutorials on how to use Flux, or solder SMD, Microchips etc... You definitely need some magnifier as well, at least for controlling after soldering. I also have a magnifying headset for soldering. Because the chips's pins or the 0805 components are just pretty damn small.<br>
 Best is to start with all components EXCEPT for the diodes and switches. A basic setup to make your computer recognize the chip when plugged in. This way you can react to issues at an early stage. And there can be issues! See mistakes section.<br>
 If you built the board correctly, you will see a new USB device after plugging it into an USB port on your computer. It's named after the chip in the device manager (Windows), or on Mac "About this Mac" -> "More info".<br>
@@ -141,17 +164,17 @@ Once done soldering all components, the stabs and switches can be put in. First 
 I sprayed the metal plate with a matt black color, it looked amazing afterwards! After the board is soldered and assembled to the mounting plate, all switches and stabs are in, the case can be screwed together and the keycaps put on.<br>
 
 <br>
-<b>Firmware</b><br>
+<h3 id="firmware">Firmware</h3>
 I chose <a href="https://docs.qmk.fm">QMK firmware</a>, which is a great open source firmware for mechanical keyboards with lots of interesting features. Including backlight, key macros, debug mode etc...<br>
 Your keyboard can be configured easily within the browser <a href="http://kbfirmware.com">kbfirmware.com</a>, things like keymap, pin mapping for the matrix, macros, basically everything. You don't have to write code at this point.<br>
 After configuring, you can either download the hex file and flash it to the chip directly, or download the source code via zip file, and build the hex file yourself. That's what I did, because this way I could also customize the USB device Vendor and Version (in config.h), which you see in your device manager. Everything from building to flashing is well documented in the QMK docs. But there is something to take note of, below in the mistakes secion.<br>
 
 <br>
-<h3 id="mistakes">Mistakes</h3><br>
+<h3 id="mistakes">Mistakes</h3>
 Ok here are some beginners mistakes, some were annoying, some stupid and some not hard to fix. I hope it help avoiding such things.
 <ul>
     <li>Ordering with DHL<br>
-    DHL scammed me so hard. I chose DHL for shipping, not UPS. So it arrived at the customs office in Leipzig, I got an email saying: Do you want us to ship the package? If you're a reseller, it would cost you extra fees. I said no, I order as a private person, and also paid the order as one. They looked at my 100 diodes position and asked me, why would you order 100 pieces of something? You must be reselling those...So I had to explain them why I would need 100 diodes! At some point they believed me and were willing to ship it. I asked the person on the phone if it would cost me something, taxes, fees etc...? If so, I do NOT want the package to be delivered. They said no, it does NOT cost anything, and shipped it. 4 weeks later I got a letter from DHL in cooperation with customs, forcing me to pay 40 Euros!!! for DHL "services"! What services please? It was free shipping you bunch of criminals! So i bought at Digikey for 5016&euro; (FREE SHIPPING), and DHL rips 4016&euro; off my face. And you can't do shit about it. If you deny the payment, you get extra fees on top of it.<br>
+    DHL scammed me so hard. I chose DHL for shipping, not UPS. So it arrived at the customs office in Leipzig, I got an email saying: Do you want us to ship the package? If you're a reseller, it would cost you extra fees. I said no, I order as a private person, and also paid the order as one. They looked at my 100 diodes position and asked me, why would you order 100 pieces of something? You must be reselling those...So I had to explain them why I would need 100 diodes! At some point they believed me and were willing to ship it. I asked the person on the phone if it would cost me something, taxes, fees etc...? If so, I do NOT want the package to be delivered. They said no, it does NOT cost anything, and shipped it. 4 weeks later I got a letter from DHL in cooperation with customs, forcing me to pay 40 Euros!!! for DHL "services"! What services please? It was free shipping you bunch of criminals! So i bought at Digikey for 50&euro; (FREE SHIPPING), and DHL rips 40&euro; off my face. And you can't do shit about it. If you deny the payment, you get extra fees on top of it.<br>
     Next time I ordered with UPS on a Friday, on Monday I had it. And NO extra fees! So never trust DHL, don't believe a single word they say. And if you order there from another continent, record every phone call and get yourself very good lawyers!<br><br>  
     </li><br>
     <li>PCB<br>
@@ -160,11 +183,11 @@ Ok here are some beginners mistakes, some were annoying, some stupid and some no
     <li>Hint<br>
     If you want to save money, it maybe a good idea to start small. This way you won't fail at the end product like I did. I had to order this PCB twice, second time with the VBus corrected. For 2$ you can design a little board like this and try it out, get used to micro chips and how they work. For me it worked right after soldering. <br> <img src="pics/devboard.jpg" width="600"/><br>I then connected some LEDs and switches from my Arduino and flashed QMK firmware on the chip. To make a 4 key keyboard. It worked perfectly fine.<br><img src="pics/testkeyboard.jpg" width="800" /><br> At this point I was sure what I'm doing, and ready to spend more money for the next keyboard PCB.<br>
     </li><br>
-    <li>Stabilizers<br>
-    I've ordered PCB mount stabs for cherry by mistake, should have gone with plate mount stabs. Just clipping them doesn't help, they don't fit at all. So I had to order new stabs.<br>
+    <li>Switch Cutouts<br>
+    I forgot to rotate vertical keys on the PCB, in the Case &amp; Plate builder the cutouts were rotated automatically. So the return key and the two vertical keys on the numblock were rotated by 90&deg; on the mounting plate, but not on the PCB. The Cherry and Gateron switches both fit the holes anyway, but without fixating. They are kept there by soldering only. Luckily assembling was possible anyway with Cherry. With Costar however, no luck. The keycap wouldn't fit on a 90&deg; rotated switch with opposite Costar stabs. So I had to remove the stabs completely there, resulting in a wobbly key.<br>
     </li><br>
     <li>LEDs<br>
-    The LEDs I've ordered were too weak. They almost didn't illuminate at all. Turns out they were "Indication" LEDs. What I needed though, were Illumination LEDs. I didn't know which parameter in the datasheet actually stands for light intensity, and found that "mcd" is the one (Millicandela). The LEDs just had 8 mcd, which is close to nothing. Then I've ordered some other LEDs on ebay for 216&euro;. They had about 550 mcd and were nice and bright! They are on the picture at the top, the green ones.<br>
+    The LEDs I've ordered were too weak. They almost didn't illuminate at all. Turns out they were "Indication" LEDs. What I needed though, were Illumination LEDs. I didn't know which parameter in the datasheet actually stands for light intensity, and found that "mcd" is the one (Millicandela). The LEDs just had 8 mcd, which is close to nothing. Then I've ordered some other LEDs on ebay for 2&euro;. They had about 550 mcd and were nice and bright! They are on the picture at the top, the green ones.<br>
     Of course they had to be of the same current (20mA) and mounting type 1206.<br>
     </li><br>
     <li>Firmware<br>

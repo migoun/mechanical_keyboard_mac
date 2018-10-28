@@ -9,6 +9,8 @@ I've built 2 keyboards with the same layouts but different components. <br><br>
 <img src="pics/original2.jpg" width="800" /><br>
 <br>
 2.) Gateron black switches, chrome- and bronze sprayed keycaps, fully transparent acrylic case and amber LEDs<br>
+<img src="pics/kb2_light.jpg" /><br>
+<img src="pics/kb2_dark.jpg" /><br>
 <br>
 
 <style>
@@ -65,17 +67,17 @@ This is mine: <a href="http://www.keyboard-layout-editor.com/#/gists/c6ae22aae21
 <h3 id="schematic">Schematic</h3>
 I did mostly everything like in the keyboard-pcb-guide tutorial. But I needed a different microcontroller, because I wanted to build a bigger keyboard with 85 keys. So with all rows and columns, I needed a total of 27 input pins for the matrix. Because QMK's firmware is used to flash the MCU, I took the one supported by QMK - AT90USB1286. It has a total of 48 input pins, so more than enough for Matrix and LED control pin.<br><br>
 This is an overview of the board. Separated in 3 parts. LED circuit, keyboard matrix and the MCU section.<br><br>
-<img src="pics/schema2.jpg" /><br><br>
+<img src="pics/schema2.png" /><br><br>
 
 Matrix and MCU circuit:<br>
-<img src="pics/schema1.jpg" /><br>
-<img src="pics/schema3.jpg" /><br>
+<img src="pics/schema1.png" /><br>
+<img src="pics/schema3.png" /><br>
 <br>
 For the matrix, I just looked at kbfirmware.com, the QMK firmware generator. I connected the keys in the schematic above exactly like the firmware tool defined my cols and rows:<br>
 <img src="pics/keywiring.jpg" /><br><br>
 
 Aditionally the LED's for the backlighting:<br>
-<img src="pics/schema4.jpg" /><br>
+<img src="pics/schema4.png" /><br>
 <br>
 
 <h3 id="pcbdesign">PCB design</h3>
