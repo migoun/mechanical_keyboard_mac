@@ -1,0 +1,274 @@
+  [
+    {
+      "c": "#c94f4f",
+      "p": "SA",
+      "a": 7,
+      "f": 6
+    },
+    "<i class='mss mss-Symbol-RadioActive-1'></i>",
+    {
+      "c": "#3d3d3d",
+      "t": "#ffffff",
+      "a": 4,
+      "f": 3
+    },
+    "!\n1",
+    "@\n2",
+    "#\n3",
+    "$\n4",
+    "%\n5",
+    "^\n6",
+    "&\n7",
+    "*\n8",
+    "(\n9",
+    ")\n0",
+    "_\n-",
+    "+\n=",
+    {
+      "c": "#32d9c5",
+      "t": "#000000",
+      "a": 7,
+      "f": 5,
+      "w": 2
+    },
+    "<i class='mss mss-Unicode-BackSpace-DeleteLeft-Big-2'></i>",
+    {
+      "x": 0.25,
+      "c": "#c2c429",
+      "f": 6
+    },
+    "<i class='fa fa-lightbulb-o'></i>",
+    {
+      "c": "#32d9c5"
+    },
+    "<i class='fa fa-arrow-circle-o-up'></i>",
+    {
+      "x": 0.25,
+      "f": 3
+    },
+    "%",
+    "/",
+    "*",
+    "-"
+  ],
+  [
+    {
+      "f": 4,
+      "w": 1.5
+    },
+    "<i class='kb kb-Tab-1'></i>",
+    {
+      "c": "#3d3d3d",
+      "t": "#ffffff",
+      "f": 3
+    },
+    "Q",
+    {
+      "t": "#33ff00"
+    },
+    "W",
+    {
+      "t": "#ffffff"
+    },
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    {
+      "a": 4
+    },
+    "{\n[",
+    "}\n]",
+    {
+      "x": 0.25,
+      "c": "#4c9ca1",
+      "t": "#000000",
+      "a": 7,
+      "f": 9,
+      "w": 1.25,
+      "h": 2,
+      "w2": 1.5,
+      "h2": 1,
+      "x2": -0.25
+    },
+    "<i class='kb kb-Return-4'></i>",
+    {
+      "x": 0.25,
+      "f": 4
+    },
+    "<i class='kb kb-Unicode-BackSpace-DeleteLeft-Big'></i>",
+    {
+      "f": 6
+    },
+    "<i class='fa fa-arrow-circle-o-down'></i>",
+    {
+      "x": 0.25,
+      "c": "#3d3d3d",
+      "t": "#ffffff",
+      "f": 3
+    },
+    "7",
+    "8",
+    "9",
+    {
+      "c": "#4c9ca1",
+      "t": "#000000",
+      "h": 2
+    },
+    "+"
+  ],
+  [
+    {
+      "f": 5,
+      "w": 1.75
+    },
+    "<i class='fa fa-hand-pointer-o'></i>",
+    {
+      "c": "#3d3d3d",
+      "t": "#33ff00",
+      "f": 3
+    },
+    "A",
+    "S",
+    "D",
+    {
+      "t": "#ffffff"
+    },
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    {
+      "a": 4
+    },
+    ":\n;",
+    "\"\n'",
+    "|\n\\",
+    {
+      "x": 3.75,
+      "a": 7
+    },
+    "4",
+    "5",
+    "6"
+  ],
+  [
+    {
+      "c": "#4f7575",
+      "t": "#000000",
+      "f": 6,
+      "w": 1.25
+    },
+    "<i class='kb kb-batman'></i>",
+    {
+      "c": "#3d3d3d",
+      "t": "#ffffff",
+      "a": 4,
+      "f": 3
+    },
+    "~\n`",
+    {
+      "a": 7
+    },
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    {
+      "a": 4
+    },
+    "<\n,",
+    ">\n.",
+    "?\n/",
+    {
+      "c": "#4f7575",
+      "t": "#000000",
+      "a": 7,
+      "f": 6,
+      "w": 2.75
+    },
+    "<i class='kb kb-batman'></i>",
+    {
+      "x": 0.25,
+      "c": "#636363",
+      "t": "#ffffff",
+      "f": 3
+    },
+    "<i class='fa fa-long-arrow-up'></i>",
+    {
+      "x": 1.25,
+      "c": "#3d3d3d"
+    },
+    "1",
+    "2",
+    "3",
+    {
+      "c": "#4f7575",
+      "t": "#000000",
+      "f": 6,
+      "h": 2
+    },
+    "<i class='kb kb-Return-4'></i>"
+  ],
+  [
+    {
+      "c": "#455c80",
+      "t": "#ffffff",
+      "f": 3,
+      "w": 1.25
+    },
+    "<i class='fa fa-chevron-up'></i>",
+    {
+      "f": 6,
+      "w": 1.25
+    },
+    "<i class='mss mss-Unicode-Option-3'></i>",
+    {
+      "w": 1.25
+    },
+    "<i class='kb kb-logo-apple-outline'></i>",
+    {
+      "c": "#3d3d3d",
+      "f": 3,
+      "w": 6.25
+    },
+    "",
+    {
+      "c": "#455c80",
+      "f": 6,
+      "w": 1.25
+    },
+    "<i class='kb kb-logo-apple-outline'></i>",
+    {
+      "w": 1.25
+    },
+    "<i class='mss mss-Unicode-Option-3'></i>",
+    {
+      "f": 3,
+      "w": 1.25
+    },
+    "<i class='fa fa-chevron-up'></i>",
+    {
+      "x": 0.5,
+      "c": "#636363"
+    },
+    "<i class='fa fa-long-arrow-left'></i>",
+    "<i class='fa fa-long-arrow-down'></i>",
+    "<i class='fa fa-long-arrow-right'></i>",
+    {
+      "x": 0.25,
+      "c": "#3d3d3d",
+      "w": 2
+    },
+    "0",
+    "."
+  ]

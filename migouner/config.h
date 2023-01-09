@@ -3,14 +3,6 @@
 
 #include "config_common.h"
 
-/* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
-#define DEVICE_VER      0x0110
-#define MANUFACTURER    Rebound Games
-#define PRODUCT         Migouner Steel
-#define DESCRIPTION     Mechanical Keyboard
-
 /* key matrix size */
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 22
@@ -31,9 +23,6 @@
 #define BREATHING_PERIOD 3
 #endif
 
-/* Set 0 if debouncing isn't needed */
-#define DEBOUNCING_DELAY 5
-
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
 
@@ -44,9 +33,6 @@
 #define IS_COMMAND() ( \
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) \
 )
-
-/* prevent stuck modifiers */
-#define PREVENT_STUCK_MODIFIERS
 
 
 #ifdef RGB_DI_PIN
